@@ -1,0 +1,7 @@
+configserver:
+    name: Itsol Registry config server
+    status: Connected to the Itsol Registry config server!
+
+logging:
+    path: /tmp
+    file: ${spring.application.name}.log

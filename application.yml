@@ -1,13 +1,20 @@
+# ===================================================================
+# Itsol Sample Spring Cloud Config.
+# ===================================================================
+
+# Property used on app startup to check the config server status
 configserver:
     name: Itsol Registry config server
     status: Connected to the Itsol Registry config server!
 
+# Default JWT secret token (to be changed in production!)
 jhipster:
     security:
         authentication:
             jwt:
-                secret: 707ea06c246cb384bf574d4e35cfe5f5b0cd378a
+                secret: 53ee9da47c71f19ad70221d94b0d1bf7b1046152
 
+# Enable /management/logfile endpoint for all apps
 logging:
     path: /tmp
     file: ${spring.application.name}.log
